@@ -92,7 +92,7 @@ public class Main {
         return average;
     }
 
-    //Create a method double calculateBmi() which will calculate body mass index (bmi = weight/height^2).
+    // 7. Create a method double calculateBmi() which will calculate body mass index (bmi = weight/height^2).
 
     /**
      * Method calculates your`s BMI.
@@ -108,7 +108,7 @@ public class Main {
         return bmi;
     }
 
-    // Create a method void convertMinutes(int minutes) which will convert minutes into a number of years and days. Print the result.
+    // 8. Create a method void convertMinutes(int minutes) which will convert minutes into a number of years and days. Print the result.
 
     /**
      * Method calculates how many years and days give you minutes.
@@ -127,7 +127,16 @@ public class Main {
 
 
     // TODO homework
-    //Write a Java program that reads an integer between 0 and 1000 and sum all the digits in the integer. Create a method sumDigitis(int number)
+    // 9. Write a Java program that reads an integer between 0 and 1000 and sum all the digits in the integer. Create a method sumDigitis(int number)
+
+    public static int sumDigitis(int number) {
+
+        int result = number++;
+        System.out.println();
+        return result;
+    }
+
+
 //    private static double srednia(int first, int second) { return (first+second)/2; }
 //
 //    private static int suma(int a, int b) { return a+b; }
