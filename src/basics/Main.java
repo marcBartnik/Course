@@ -133,6 +133,7 @@ public class Main {
 
         int result = number++;
         System.out.println();
+
         return result;
     }
 
