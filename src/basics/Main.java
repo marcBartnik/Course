@@ -10,11 +10,13 @@ public class Main {
 //        print();
 //        sum(100, 45);
 //        divide(100, 10);
-        calculations();
-        calculateRectangleArea(100, 10);
-        calculateAverage(3, 10, 17);
-        calculateBmi(75, 1.60);
-        convertMinutes(60 * 24 * 36);
+//        calculations();
+//        calculateRectangleArea(100, 10);
+//        calculateAverage(3, 10, 17);
+//        calculateBmi(75, 1.60);
+//        convertMinutes(60 * 24 * 36);
+        sumDigitis(-1);
+
     }
 
     // 1. Create a method print() which will print 'Hello' on screen and then print your name on a separate line and execute it in main().
@@ -128,14 +130,24 @@ public class Main {
 
     // TODO homework
     // 9. Write a Java program that reads an integer between 0 and 1000 and sum all the digits in the integer. Create a method sumDigitis(int number)
+    /**
+     * Method summarize all digits from number you gave
+     * @param number int value in range (0, 1000)
+     */
+    private static void sumDigitis(int number) {
 
-    public static int sumDigitis(int number) {
-
-        int result = number++;
-        System.out.println();
-
-        return result;
+        if (number >= 0 && number <= 1000) {
+            int houndreds = number / 100;
+            int dozens = (number % 100) / 10;
+            int unities = ((number % 100) % 10);
+            int sum = houndreds + dozens + unities;
+            System.out.println("Summarized digits from your number give " + sum);
+        }
+        else {
+            System.out.println("Number should be in range from 0 to 1000");
+        }
     }
+
 
 
 //    private static double srednia(int first, int second) { return (first+second)/2; }
