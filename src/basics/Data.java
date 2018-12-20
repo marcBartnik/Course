@@ -4,9 +4,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class TableData {
+class Data {
 
-    int[] table = {-23, 3, 4, -9, 0, 10};
+    public int[] getArray() {
+
+        int[] array = {-23, 3, 4, -9, 0, 10};
+        return array;
+
+    }
+
 
     List<Integer> list = Arrays.asList(-23, 3, 4, -9, 0, 10);
 

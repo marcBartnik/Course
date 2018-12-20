@@ -15,7 +15,7 @@ public class Main {
 //        calculateAverage(3, 10, 17);
 //        calculateBmi(75, 1.60);
 //        convertMinutes(60 * 24 * 36);
-        sumDigitis(-1);
+        sumDigitis(101);
 
     }
 
@@ -137,14 +137,17 @@ public class Main {
     private static void sumDigitis(int number) {
 
         if (number >= 0 && number <= 1000) {
-            int houndreds = number / 100;
+
+            int thousends = number / 1000;
+            int houndreds = (number % 1000) / 100;
             int dozens = (number % 100) / 10;
             int unities = ((number % 100) % 10);
-            int sum = houndreds + dozens + unities;
-            System.out.println("Summarized digits from your number give " + sum);
+
+            int sum = thousends + houndreds + dozens + unities;
+            System.out.println("Summarized digits from your number give: " + sum);
         }
         else {
-            System.out.println("Number should be in range from 0 to 1000");
+            System.out.println("Number should be in range from 0 to 1000.");
         }
     }
 
