@@ -72,4 +72,5 @@ public class Scanner {
     }
 
     // 4. TODO homework - Create a method 'fizzBuzz()'' which will print the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
+    // 5. TODO homework zintegruj intellij z gitlabem, dodaj swoje konto na gitlabie
 }
