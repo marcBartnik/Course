@@ -3,7 +3,7 @@ package basics;
 public class Main {
 
     public static void main(String[] args) {
-//        napis();
+////        napis();
 //        suma(2, 3);
 //        srednia(4,5);
 

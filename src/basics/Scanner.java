@@ -2,11 +2,12 @@ package basics;
 
 public class Scanner {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
 //        isPalindrom("Kafak");
 //        playGame();
-        System.out.println(retrieveWeekDay(5));
+//        System.out.println(retrieveWeekDay(5));
+        fizzBuzz();
     }
 
     private static boolean isPalindrom(String input){
@@ -71,6 +72,25 @@ public class Scanner {
         }
     }
 
-    // 4. TODO homework - Create a method 'fizzBuzz()'' which will print the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
+    // 4. TODO homework - Create a method 'fizzBuzz()'' which will print the numbers from 1 to 100.
+    //  TODO              But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
+
+    private static void fizzBuzz() {
+
+        for (int i = 1; i < 100; i++) {
+
+            if (i%3 == 0 && i%5 == 0) {
+                System.out.println("FizzBuzz");
+            }
+            if (i%3 == 0) {
+                System.out.println("Fizz");
+            }
+            if (i%5 == 0) {
+                System.out.println("Buzz");
+            }
+            else System.out.println(i);
+        }
+    }
+
     // 5. TODO homework zintegruj intellij z gitlabem, dodaj swoje konto na gitlabie
 }
